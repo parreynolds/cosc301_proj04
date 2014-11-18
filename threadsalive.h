@@ -10,15 +10,17 @@
    *************************** */
 
 typedef struct {
+   int count;
+   struct node *sem_list;
 
 } tasem_t;
 
 typedef struct {
-
+   tasem_t sem;
 } talock_t;
 
 typedef struct {
-
+  struct node *cond_list;
 } tacond_t;
 
 
